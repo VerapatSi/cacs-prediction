@@ -6,8 +6,8 @@ The study predicts a coronary artery calcium score (CACS) of 100 or more from ro
 
 | Notebook | Feature set | Patients | Features |
 |---|---|---|---|
-| `snapshot_all_models.ipynb` | Snapshot: most recent values, days since each value, number of measurements, and six additional features | 1,095 | 47 |
-| `trend_all_models.ipynb` | Trend: slope, delta, and standard deviation of each variable | 635 | 41 |
+| `snapshot.ipynb` | Snapshot: most recent values, days since each value, number of measurements, and six additional features | 1,095 | 47 |
+| `trend.ipynb` | Trend: slope, delta, and standard deviation of each variable | 635 | 41 |
 
 Both notebooks use the same procedure: five-fold cross-validation repeated three times (the same 15 folds for every model), imputation fitted on the training fold only, five models (logistic regression, random forest, support vector machine, XGBoost, and TabPFN), evaluation by accuracy, macro precision, macro recall, macro F1 score, and AUC, ROC curves, and permutation importance.
 
